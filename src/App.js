@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import HomeView from "./mod/HomeView";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import React, {Fragment} from 'react'
+import HeaderMod from "./mod/HeaderMod";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Router>
+      <Fragment>
+        <Routes>
+          <Route exact path='/' element={<HomeView/>}/>
+          <Route exact path='/home' element={<HomeView/>}/>
+        </Routes>
+      </Fragment>
+    </Router>
+  )
+};
 
 export default App;

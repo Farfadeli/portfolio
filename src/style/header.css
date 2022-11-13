@@ -1,0 +1,21 @@
+header{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    color: white;
+    animation: letter_space .33s linear forwards;
+    font-weight: 200;
+}
+
+@keyframes letter_space {
+    from{
+        letter-spacing: -10px;
+    }
+    to{
+        letter-spacing: 10px;
+    }
+}

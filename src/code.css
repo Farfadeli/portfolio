@@ -1,0 +1,10 @@
+.code-contain{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.scrollable{
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.extra{height: 500px;}

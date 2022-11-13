@@ -1,0 +1,52 @@
+.card-container{
+    width: 100%;
+    background-color: white;
+    border-radius: .6rem .6rem .5rem .5rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+.card-container:hover{
+    box-shadow: .5rem .5rem rgba(0, 0, 0, .2);
+    transition: .25s;
+}
+.card-title{
+    font-weight: 200;
+    font-size: xx-large;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 5px;
+}
+.img-card{
+    width: 100%;
+    border-radius: .5rem .5rem 0rem 0rem;
+}
+.technologie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border: black 1px solid;
+    border-radius: 5rem;
+}
+.tech-react-native{
+    background-color: blue;
+    width: 10px;
+    height: 10px;
+    border-radius: 10rem;
+}
+.tech-java{
+    background-color: rgb(250, 186, 58);
+    width: 10px;
+    height: 10px;
+    border-radius: 10rem;
+}
+.technologie .techno-name{
+    margin-left: .5rem;
+}
+.desc-card{
+    padding-left: .5rem;
+    letter-spacing: 1px;
+    line-height: 1.4rem;
+}

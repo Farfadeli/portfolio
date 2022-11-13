@@ -1,0 +1,41 @@
+.pres{
+    margin-top: 1rem;
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pres img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100rem;
+    transform: scale(0);
+    border: rgb(190, 190, 253) 2px solid;
+    animation: higher .25s linear forwards;
+    animation-delay: .40s;
+}
+.pres .whoIam{
+    padding: 1rem;
+    font-size: x-small;
+    transform: scale(0);
+    color: rgb(214, 212, 212);  
+    animation: higher .25s linear forwards;
+    animation-delay: .30s;
+}
+.pres .whoIam h2{
+    text-align: center;
+    letter-spacing: 5px;
+}
+.pres .whoIam p{
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+@keyframes higher {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
