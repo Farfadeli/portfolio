@@ -1,0 +1,150 @@
+$primary-red: #f74a53;
+$rpimary-black: #0c1722;
+
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: "impact";
+    src: url(../font/impact.ttf);
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color: $rpimary-black;
+    header{
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            font-size: 4rem;
+            font-family: 'impact';
+            color: $primary-red;
+            letter-spacing: -2px;
+        }
+
+        ul{
+            width: 35%;
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 7.5%;
+            margin-top: 2.5vh;
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            padding-left: 0;
+            color: white;
+
+            .active{
+                color: $primary-red;
+                font-size: 1.25rem;
+            }
+
+            li:not(.active){
+                cursor: pointer;
+                font-size: 1.25rem;
+                &:hover{
+                    color: $primary-red;
+                    transform: scale(1.2);
+                    transition: .33s;
+                }
+            }
+        }
+    }
+
+
+    #container{
+        display: flex;
+        width: 100%;
+        height: 65vh;
+        margin-top: 2rem;
+        .profil-img{
+            width: 50%;
+            height: 100%;
+        }
+        .presentation{
+            width: 50%;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                font-family: 'impact';
+                color: $primary-red;
+                text-align: center;
+                font-size: 2.5rem;
+                letter-spacing: 2px;
+            }
+            p{
+                margin-top: 1rem;
+                letter-spacing: 1px;
+                font-size: 1.1rem;
+                text-align: center;
+                color: white;
+            }
+
+            button{
+                background-color: $primary-red;
+                color: $rpimary-black;
+                font-family: 'impact';
+                border: transparent 1px solid;
+                padding: 1rem;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                margin-top: 2.5rem;
+                cursor: pointer;
+
+                &:hover{
+                    background: transparent;
+                    color: $primary-red;
+                    border: 1px solid $primary-red;
+                    transition: .33s;
+                }
+            }
+        }
+    }
+
+    #contain-projets{
+        overflow: scroll;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(10, 33%);
+        grid-gap: 5%;
+        .card-projet{
+            background-color: white;
+            height: 100%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 1rem .5rem .5rem rgba(0, 0, 0, .33);
+            overflow: hidden;
+            cursor: pointer;
+            height: max-content;
+            h2{
+                font-family: 'impact';
+                font-size: 2rem;
+            }
+            p{
+                margin-top: 1rem;
+                font-size: 1.3rem;
+                letter-spacing: 1px;
+            }
+            &:hover{
+                transform: scale(1.1);
+                transition: .33s;
+            }
+        }
+    }
+}
