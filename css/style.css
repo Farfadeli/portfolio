@@ -83,10 +83,12 @@ body #container .presentation p {
   font-size: 1.1rem;
   text-align: center;
   color: white;
+  width: 75%;
 }
 body #container .presentation button {
   background-color: #f74a53;
   color: #0c1722;
+  font-size: 1.25rem;
   font-family: "impact";
   border: transparent 1px solid;
   padding: 1rem;
