@@ -2,6 +2,8 @@ let accueil = document.querySelector(".accueil")
 let projet = document.querySelector(".projets")
 let veille = document.querySelector(".veille")
 let contact = document.querySelector(".contact")
+let doc = document.querySelector(".documents")
+
 
 $('#container').load("../page/accueil.html")
 accueil.addEventListener("click" , () => {
@@ -25,4 +27,10 @@ contact.addEventListener("click" , () => {
     let act = document.querySelector(".active");
     act.classList.remove("active");
     contact.classList.add("active");
+})
+doc.addEventListener("click" , () => {
+    let act = document.querySelector(".active");
+    act.classList.remove("active");
+    doc.classList.add("active");
+    $('#container').load("../page/documents.html")
 })

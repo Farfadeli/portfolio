@@ -1,5 +1,5 @@
 $primary-red: #f74a53;
-$rpimary-black: #0c1722;
+$primary-black: #0c1722;
 
 *{
     margin: 0;
@@ -15,7 +15,7 @@ html,body{
 }
 
 body{
-    background-color: $rpimary-black;
+    background-color: $primary-black;
     header{
         width: 100vw;
         height: 30vh;
@@ -94,7 +94,7 @@ body{
 
             button{
                 background-color: $primary-red;
-                color: $rpimary-black;
+                color: $primary-black;
                 font-size: 1.25rem;
                 font-family: 'impact';
                 border: transparent 1px solid;
@@ -115,7 +115,8 @@ body{
     }
 
     #contain-projets{
-        overflow: scroll;
+        overflow-X: scroll;
+        overflow-y: hidden;
         display: grid;
         width: 100%;
         grid-template-columns: repeat(10, 33%);
@@ -146,6 +147,71 @@ body{
             &:hover{
                 transform: scale(1.1);
                 transition: .33s;
+            }
+        }
+    }
+
+    #contain-documents{
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        
+        .CV{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 1px solid white;
+            h2{
+                font-size: 3.5rem;
+                font-family: 'impact';
+                color: $primary-red;
+            }
+            a{
+                margin-top: 10rem;
+                text-decoration: none;
+                background-color: $primary-red;
+                color: $primary-black;
+                padding: 1rem;
+                padding-left: 1.75rem;
+                padding-right: 1.75rem;
+                font-family: 'impact';
+                font-size: 1.25rem;
+                border: 1px solid $primary-red;
+                &:hover{
+                    background-color: transparent;
+                    color: $primary-red;
+                    transition: .33s;
+                }
+            }
+        }
+        .fiche{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                font-size: 3.5rem;
+                font-family: 'impact';
+                color: $primary-red;
+                letter-spacing: 2px;
+            }
+            a{
+                margin-top: 10rem;
+                text-decoration: none;
+                background-color: $primary-red;
+                color: $primary-black;
+                padding: 1rem;
+                padding-left: 1.75rem;
+                padding-right: 1.75rem;
+                font-family: 'impact';
+                font-size: 1.25rem;
+                border: 1px solid $primary-red;
+                &:hover{
+                    background-color: transparent;
+                    color: $primary-red;
+                    transition: .33s;
+                }
             }
         }
     }

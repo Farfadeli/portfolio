@@ -104,7 +104,8 @@ body #container .presentation button:hover {
   transition: 0.33s;
 }
 body #contain-projets {
-  overflow: scroll;
+  overflow-X: scroll;
+  overflow-y: hidden;
   display: grid;
   width: 100%;
   grid-template-columns: repeat(10, 33%);
@@ -136,6 +137,69 @@ body #contain-projets .card-projet p {
 }
 body #contain-projets .card-projet:hover {
   transform: scale(1.1);
+  transition: 0.33s;
+}
+body #contain-documents {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+}
+body #contain-documents .CV {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid white;
+}
+body #contain-documents .CV h2 {
+  font-size: 3.5rem;
+  font-family: "impact";
+  color: #f74a53;
+}
+body #contain-documents .CV a {
+  margin-top: 10rem;
+  text-decoration: none;
+  background-color: #f74a53;
+  color: #0c1722;
+  padding: 1rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  font-family: "impact";
+  font-size: 1.25rem;
+  border: 1px solid #f74a53;
+}
+body #contain-documents .CV a:hover {
+  background-color: transparent;
+  color: #f74a53;
+  transition: 0.33s;
+}
+body #contain-documents .fiche {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #contain-documents .fiche h2 {
+  font-size: 3.5rem;
+  font-family: "impact";
+  color: #f74a53;
+  letter-spacing: 2px;
+}
+body #contain-documents .fiche a {
+  margin-top: 10rem;
+  text-decoration: none;
+  background-color: #f74a53;
+  color: #0c1722;
+  padding: 1rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  font-family: "impact";
+  font-size: 1.25rem;
+  border: 1px solid #f74a53;
+}
+body #contain-documents .fiche a:hover {
+  background-color: transparent;
+  color: #f74a53;
   transition: 0.33s;
 }
 
