@@ -110,12 +110,14 @@ body #contain-projets {
   width: 100%;
   grid-template-columns: repeat(3, 30%);
   grid-gap: 5%;
+  height: max-content;
+  padding-bottom: 2rem;
 }
 body #contain-projets .card-projet {
   background-color: #19232e;
-  height: 100%;
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
+  height: 85%;
   flex-direction: column;
   width: 75%;
   align-items: center;
@@ -124,12 +126,11 @@ body #contain-projets .card-projet {
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.33);
   overflow: hidden;
   cursor: pointer;
-  height: max-content;
   border-radius: 0.5rem;
 }
 body #contain-projets .card-projet img {
-  width: 300px;
-  height: 250px;
+  width: 200px;
+  height: 150px;
 }
 body #contain-projets .card-projet h2 {
   font-family: "impact";
@@ -141,8 +142,8 @@ body #contain-projets .card-projet h2 {
 body #contain-projets .card-projet p {
   margin-top: 1rem;
   color: white;
-  font-size: 1.4rem;
-  letter-spacing: 1.25px;
+  font-size: 1.25rem;
+  letter-spacing: 1.15px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 body #contain-projets .card-projet:hover {

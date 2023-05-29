@@ -6,3 +6,6 @@ document.querySelector("#contain-projets").addEventListener("wheel", (evt) =>{
 document.querySelector(".evn").addEventListener("click", () => {
     window.location.href = window.location.href + "page/project/evnProject.html";
 })
+document.querySelector(".seetalk").addEventListener("click" , () =>{
+    window.location.href = window.location.href + "page/project/seetalkProject.html";
+})
