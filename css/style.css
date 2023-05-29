@@ -108,11 +108,11 @@ body #contain-projets {
   overflow-y: hidden;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(10, 33%);
+  grid-template-columns: repeat(3, 30%);
   grid-gap: 5%;
 }
 body #contain-projets .card-projet {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.436);
   height: 100%;
   padding: 1rem;
   display: flex;
@@ -125,18 +125,24 @@ body #contain-projets .card-projet {
   overflow: hidden;
   cursor: pointer;
   height: max-content;
+  border-radius: 0.5rem;
+}
+body #contain-projets .card-projet img {
+  width: 300px;
+  height: 250px;
 }
 body #contain-projets .card-projet h2 {
   font-family: "impact";
   font-size: 2rem;
+  margin-top: 1rem;
 }
 body #contain-projets .card-projet p {
   margin-top: 1rem;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
+  font-size: 1.4rem;
+  letter-spacing: 1.25px;
 }
 body #contain-projets .card-projet:hover {
-  transform: scale(1.1);
+  background-color: #f74a53;
   transition: 0.33s;
 }
 body #contain-documents {

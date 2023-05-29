@@ -119,10 +119,10 @@ body{
         overflow-y: hidden;
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(10, 33%);
+        grid-template-columns: repeat(3, 30%);
         grid-gap: 5%;
         .card-projet{
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.436);
             height: 100%;
             padding: 1rem;
             display: flex;
@@ -135,17 +135,23 @@ body{
             overflow: hidden;
             cursor: pointer;
             height: max-content;
+            border-radius: .5rem;
+            img{
+                width: 300px;
+                height: 250px;
+            }
             h2{
                 font-family: 'impact';
                 font-size: 2rem;
+                margin-top: 1rem;
             }
             p{
                 margin-top: 1rem;
-                font-size: 1.3rem;
-                letter-spacing: 1px;
+                font-size: 1.4rem;
+                letter-spacing: 1.25px;
             }
             &:hover{
-                transform: scale(1.1);
+                background-color: $primary-red;
                 transition: .33s;
             }
         }
