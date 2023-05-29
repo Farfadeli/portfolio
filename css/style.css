@@ -112,16 +112,16 @@ body #contain-projets {
   grid-gap: 5%;
 }
 body #contain-projets .card-projet {
-  background-color: rgba(255, 255, 255, 0.436);
+  background-color: #19232e;
   height: 100%;
-  padding: 1rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   width: 75%;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 1rem 0.5rem 0.5rem rgba(0, 0, 0, 0.33);
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.33);
   overflow: hidden;
   cursor: pointer;
   height: max-content;
@@ -134,16 +134,23 @@ body #contain-projets .card-projet img {
 body #contain-projets .card-projet h2 {
   font-family: "impact";
   font-size: 2rem;
+  letter-spacing: 2px;
   margin-top: 1rem;
+  color: white;
 }
 body #contain-projets .card-projet p {
   margin-top: 1rem;
+  color: white;
   font-size: 1.4rem;
   letter-spacing: 1.25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 body #contain-projets .card-projet:hover {
   background-color: #f74a53;
   transition: 0.33s;
+}
+body #contain-projets .card-projet:hover p, body #contain-projets .card-projet:hover h2 {
+  color: #0c1722;
 }
 body #contain-documents {
   width: 100vw;

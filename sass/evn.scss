@@ -1,0 +1,119 @@
+$primary-black: #0c1722;
+$primary-red: #f74a53;
+
+@font-face {
+    font-family: "impact";
+    src: url(../../font/impact.ttf);
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: $primary-black;
+
+    svg {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .container {
+        width: 75%;
+        height: auto;
+        background-color: #19232e;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15vh;
+        padding: 2.5rem;
+
+        h1 {
+            color: $primary-red;
+            font-size: 5rem;
+            text-align: center;
+            letter-spacing: 1rem;
+            font-family: 'impact';
+        }
+
+        h2 {
+            margin-top: 5vh;
+            color: white;
+            width: 100%;
+            font-size: 3rem;
+            font-family: 'impact';
+            border-bottom: 1px solid white;
+        }
+
+        p {
+            color: white;
+            font-size: 1.25rem;
+            letter-spacing: 1px;
+            margin-top: 1rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        img:not(img:nth-child(1)) {
+            width: 100%;
+            margin-top: 2.5rem;
+        }
+
+        .buttons {
+            margin-top: 10rem;
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+
+            button {
+                padding: 1rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                font-family: 'impact';
+                font-size: 1.33rem;
+                cursor: pointer;
+                border-radius: 2.5rem;
+                border: 1px solid transparent;
+
+                &:nth-child(1) {
+                    background-color: #7239d3;
+                    color: white;
+
+                    &:hover {
+                        background-color: transparent;
+                        border: 1px solid #7239d3;
+                        box-shadow: .1rem .35rem 2rem #7139d360;
+                        transition: .33s;
+                    }
+                }
+            }
+
+            a {
+                padding: 1rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                font-family: 'impact';
+                font-size: 1.33rem;
+                cursor: pointer;
+                border-radius: 2.5rem;
+                border: 1px solid transparent;
+                text-decoration: none;
+                background-color: $primary-red;
+                color: $primary-black;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $primary-red;
+                    box-shadow: .1rem .35rem 2rem #f74a5360;
+                    border: 1px solid $primary-red;
+                    transition: .33s;
+                }
+            }
+        }
+
+    }
+}
