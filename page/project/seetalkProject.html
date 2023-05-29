@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../../css/evn.css">
     <title>Nicolas Daunac | Seetalk</title>
 </head>
+
 <body>
     <svg class="arrow" width="100" height="100">
         <polygon points="75,45 75,55 35,55 35,65 25,50 35,35 35,45 75,45" fill="white" style="cursor: pointer" />
@@ -14,9 +16,58 @@
 
     <div class="container">
         <h1>SEETALK</h1>
+        <h2>Présentation de l'entreprise</h2>
+        <p>
+            La société TXCOM est une société française spécialisée dans la conception ,la fabrication et la
+            commercialisation de produits de communication. Son siège social est situé au Plessis Robinson
+            (Hauts de Seine)
+        </p>
+        <h2>Présentation du projet</h2>
+        <p>
+            L’entreprise TXCOM souhaite adjoindre une nouvelle fonctionnalité à sa plateforme permettant de collaborer à
+            distance via la vidéo conférence. Vous être chargé de l’étude technique et de la réalisation d’un prototype.
+        </p>
+        <h2>Schéma de la base de donnée</h2>
+        <img src="../../image/seetalk/mcd.png" alt="mcd Seetalk">
+        <h2>Les Backlogs</h2>
+        <img src="../../image/seetalk/backlogs.png" alt="backlogs">
+        <h2>Le plan du site</h2>
+        <img src="../../image/seetalk/plan.png" alt="plan du site">
+        <h2>Les vues</h2>
+        <p>Il y a une gestion des droits et des utilisateurs. Un visiteur ne peut accéder qu’à la page de connexion et à
+            l’accueil du site.</p>
+        <img src="../../image/seetalk/connexion.png" alt="page connexion">
+        <p>
+            Il y a plusieurs types d’utilisateurs :
+            <br>
+            - administrateur, il a accès a tout le site et gère les utilisateurs
+            <br>
+            - utilisateur, les employés, ils peuvent accéder aux réunions
+            <br>
+            - gestionnaire, ils peuvent créer des réunions et inviter d’autres personnes
+        </p>
+        <img src="../../image/seetalk/inscription.png" alt="page inscription">
+        <p>
+            Le formulaire de création de réunion permet de définir les membres de la réunion, un mot de passe, nom,
+            objet et une date et heure.
+            Ensuite, chaque utilisateur peut voir les réunions à venir et il peut annoncer sa présence ou rejoindre
+            l’appel si c’est l’heure de la réunion
+        </p>
+        <img src="../../image/seetalk/reunions.png" alt="page de réunion">
+        <p>
+            Enfin, la page de gestion utilisateur permet de modifier, supprimer, ajouter ou valider les utilisateurs.
+            Par défaut, tout utilisateur créé n’a pas accès au site, il doit être validé pour gagner l’accès.
+        </p>
+        <img src="../../image/seetalk/gestionUser.png" alt="page gestion utilisateur">
+
+        <div class="buttons">
+            <button onclick="window.open('https://github.com/Farfadeli/Seetalk', '_blank')">Github</button>
+            <a href="#">Fiche E4</a>
+        </div>
     </div>
 
 
     <script src="../../javascript/redirection.js" type="text/javascript"></script>
 </body>
+
 </html>

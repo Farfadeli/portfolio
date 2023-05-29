@@ -48,6 +48,8 @@ body .container p {
   font-size: 1.25rem;
   letter-spacing: 1px;
   margin-top: 1rem;
+  text-align: justify;
+  line-height: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 body .container img:not(img:nth-child(1)) {
