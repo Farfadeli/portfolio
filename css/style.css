@@ -6,7 +6,8 @@
   font-family: "impact";
   src: url(../font/impact.ttf);
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -62,6 +63,13 @@ body #container {
 body #container .profil-img {
   width: 50%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+}
+body #container .profil-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10rem;
 }
 body #container .presentation {
   width: 50%;
@@ -150,7 +158,8 @@ body #contain-projets .card-projet:hover {
   background-color: #f74a53;
   transition: 0.33s;
 }
-body #contain-projets .card-projet:hover p, body #contain-projets .card-projet:hover h2 {
+body #contain-projets .card-projet:hover p,
+body #contain-projets .card-projet:hover h2 {
   color: #0c1722;
 }
 body #contain-documents {
@@ -214,6 +223,85 @@ body #contain-documents .fiche a {
 body #contain-documents .fiche a:hover {
   background-color: transparent;
   color: #f74a53;
+  transition: 0.33s;
+}
+body #contain-veille {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 75% 75%;
+  height: 65vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  grid-row-gap: 55px;
+}
+body #contain-veille .card {
+  width: 75%;
+  background-color: #19232e;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+body #contain-veille .card p {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1.25px;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  text-align: justify;
+}
+body #contain-veille .card img {
+  width: 100%;
+}
+body #contain-veille .card:hover {
+  background-color: #f74a53;
+  box-shadow: 0.1rem 0.15rem 1.5rem #f74a53;
+  transition: 0.33s;
+}
+body #contain-veille .card:hover p {
+  color: #0c1722;
+  transition: 0.33s;
+}
+body #contain-contact {
+  width: 100%;
+}
+body #contain-contact form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+body #contain-contact form input[type=mail] {
+  width: 50%;
+  padding: 1rem;
+  outline: none;
+}
+body #contain-contact form textarea {
+  resize: none;
+  margin-top: 2.5rem;
+  outline: none;
+}
+body #contain-contact form input[type=submit] {
+  margin-top: 2.5rem;
+  width: 25%;
+  background-color: #f74a53;
+  border-radius: 1.5rem;
+  border: 1px solid transparent;
+  font-family: "impact";
+  color: #0c1722;
+  font-size: 1.25rem;
+  padding: 1rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+body #contain-contact form input[type=submit]:hover {
+  border: 1px solid #f74a53;
+  color: #f74a53;
+  background-color: #0c1722;
+  box-shadow: 0.1rem 0.15rem 1.5rem #f74a53;
   transition: 0.33s;
 }
 

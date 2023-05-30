@@ -22,11 +22,13 @@ veille.addEventListener("click" , () => {
     let act = document.querySelector(".active");
     act.classList.remove("active");
     veille.classList.add("active");
+    $('#container').load("../page/veille.html")
 })
 contact.addEventListener("click" , () => {
     let act = document.querySelector(".active");
     act.classList.remove("active");
     contact.classList.add("active");
+    $('#container').load("../page/contact.html")
 })
 doc.addEventListener("click" , () => {
     let act = document.querySelector(".active");

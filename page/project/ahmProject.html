@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/evn.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <svg class="arrow" width="100" height="100">
+        <polygon points="75,45 75,55 35,55 35,65 25,50 35,35 35,45 75,45" fill="white" style="cursor: pointer" />
+    </svg>
+
+    <div class="container">
+        <h1>AHM23</h1>
+        <h2>Présentation de l'entreprise</h2>
+        <p>
+            Créée en 1960 et reconnue d’utilité publique, l'association d’aide au handicap mental AHM-23 est une
+            association départementale à but non lucratif (association loi 1901) affiliée à l'Unapei (Union nationale
+            des associations de parents, de personnes handicapées mentales et de leurs amis). Elle œuvre en faveur des
+            droits des personnes souffrant de handicap mental et de leurs familles, en favorisant leur insertion sociale
+            et professionnelle.
+        </p>
+        <h2>Présentation du projet</h2>
+        <p>
+            Les Esat La Forêt et Les Mésanges ont chacun un atelier dont l'activité consiste à fabriquer des palettes
+            sur commande pour des entreprises locales.
+
+            Actuellement, le chef d’atelier de chaque site utilise une application tableur permettant la gestion des
+            commandes de palettes pour ses clients ainsi que la gestion du stock des matières premières entrant dans la
+            fabrication des palettes.
+
+            Depuis quelques années, la demande de palettes ne cesse de croitre. Le volume mensuel de palettes fabriquées
+            atteint actuellement 9000 exemplaires au total. De ce fait, la gestion des stocks à l’aide du tableur n’est
+            plus concevable.
+
+            Afin d'avoir une vision globale des stocks, l’AHM-23 souhaiterait disposer d’une solution web accessible par
+            les deux sites permettant de connaître en temps réel l’état des stocks de matières premières, de palettes
+            fabriquées et d'envisager une valorisation des déchets.
+        </p>
+        <h2>Schéma de la base de donnée</h2>
+        <img src="../../image/ahm/mcd.png" alt="mcd ahm23">
+        <h2>Les backlogs</h2>
+        <img src="../../image/ahm/backlogs.png" alt="backlogs ahm23">
+        <h2>Les vues</h2>
+        <p>
+            Lors du lançement de l'application nous arrivons sur une page de connexion, qui bloque l'accès à la suite si nous
+            ne somment pas employée.
+        </p>
+        <img src="../../image/ahm/connexion.png" alt="page connexion ahm23">
+        <p>
+            Lorsqu'ont est connecté, nous arrivons sur une page d'accueil avec 5 icone, qui nous permettent de nous déplacer
+            sur le site
+        </p>
+        <img src="../../image/ahm/accueil.png" alt="page accueil ahm23">
+        <p>
+            Nous avons donc la page Gestion de stock qui nous permets de visualiser en temps réel la quantité de stock
+            disponible
+        </p>
+        <img src="../../image/ahm/vision_stock.png" alt="page vision stock">
+        <img src="../../image/ahm/vision_stock_rechecherche.png" alt="page vision stock avec recherche">
+        <p>
+            Nous avons également la page comptabilité qui permet de visualiser toute les palette qui ont été créer 
+            (le nom, la quantité, le prix à l'unité et le prix total).
+        </p>
+        <img src="../../image/ahm/comptable.png" alt="page comptabilité">
+        <p>
+            Nous avons la page Ajout Stocks qui permet d'ajouter des matières première au stock.
+        </p>
+        <img src="../../image/ahm/ajout_stock.png" alt="page ajout stock">
+        <p>
+            Enfin nous avons la page gestion utilisateur qui permets aux administrateur de visualiser les utilisateurs
+            (nom, prenom et adresse mail), ainsi que créer des nouveux utilisateurs.
+        </p>
+        <img src="../../image/ahm/utilisateurs.png" alt="page utilisateurs">
+        <img src="../../image/ahm/utilisateurs_add.png" alt="page ajout utilisateur">
+
+        <div class="buttons">
+            <button onclick="window.open('https://github.com/Farfadeli/AP2', '_blank')">Github</button>
+            <a href="../../documents/epreuveE4/tabSyntheseE4AHM.pdf" target="_blank">Fiche E4</a>
+        </div>
+    </div>
+
+    <script src="../../javascript/redirection.js" type="text/javascript"></script>
+</body>
+
+</html>

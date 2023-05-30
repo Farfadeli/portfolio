@@ -1,7 +1,7 @@
 $primary-red: #f74a53;
 $primary-black: #0c1722;
 
-*{
+* {
     margin: 0;
 }
 
@@ -10,26 +10,29 @@ $primary-black: #0c1722;
     src: url(../font/impact.ttf);
 }
 
-html,body{
+html,
+body {
     height: 100%;
 }
 
-body{
+body {
     background-color: $primary-black;
-    header{
+
+    header {
         width: 100vw;
         height: 30vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        h1{
+
+        h1 {
             font-size: 4rem;
             font-family: 'impact';
             color: $primary-red;
             letter-spacing: -2px;
         }
 
-        ul{
+        ul {
             width: 35%;
             display: flex;
             list-style: none;
@@ -43,15 +46,16 @@ body{
             padding-left: 0;
             color: white;
 
-            .active{
+            .active {
                 color: $primary-red;
                 font-size: 1.25rem;
             }
 
-            li:not(.active){
+            li:not(.active) {
                 cursor: pointer;
                 font-size: 1.25rem;
-                &:hover{
+
+                &:hover {
                     color: $primary-red;
                     transform: scale(1.2);
                     transition: .33s;
@@ -61,29 +65,40 @@ body{
     }
 
 
-    #container{
+    #container {
         display: flex;
         width: 100%;
         height: 65vh;
         margin-top: 2rem;
-        .profil-img{
+
+        .profil-img {
             width: 50%;
             height: 100%;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 300px;
+                height: 300px;
+                border-radius: 10rem;
+            }
         }
-        .presentation{
+
+        .presentation {
             width: 50%;
             padding: 2rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-            h2{
+
+            h2 {
                 font-family: 'impact';
                 color: $primary-red;
                 text-align: center;
                 font-size: 2.5rem;
                 letter-spacing: 2px;
             }
-            p{
+
+            p {
                 margin-top: 1rem;
                 letter-spacing: 1px;
                 font-size: 1.1rem;
@@ -92,7 +107,7 @@ body{
                 width: 75%;
             }
 
-            button{
+            button {
                 background-color: $primary-red;
                 color: $primary-black;
                 font-size: 1.25rem;
@@ -104,7 +119,7 @@ body{
                 margin-top: 2.5rem;
                 cursor: pointer;
 
-                &:hover{
+                &:hover {
                     background: transparent;
                     color: $primary-red;
                     border: 1px solid $primary-red;
@@ -114,7 +129,7 @@ body{
         }
     }
 
-    #contain-projets{
+    #contain-projets {
         overflow-X: scroll;
         overflow-y: hidden;
         display: grid;
@@ -123,7 +138,8 @@ body{
         grid-gap: 5%;
         height: max-content;
         padding-bottom: 2rem;
-        .card-projet{
+
+        .card-projet {
             background-color: #19232e;
             padding: 2rem;
             display: flex;
@@ -137,51 +153,59 @@ body{
             overflow: hidden;
             cursor: pointer;
             border-radius: .5rem;
-            img{
+
+            img {
                 width: 200px;
                 height: 150px;
             }
-            h2{
+
+            h2 {
                 font-family: 'impact';
                 font-size: 2rem;
                 letter-spacing: 2px;
                 margin-top: 1rem;
                 color: white;
             }
-            p{
+
+            p {
                 margin-top: 1rem;
                 color: white;
                 font-size: 1.25rem;
                 letter-spacing: 1.15px;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
-            &:hover{
+
+            &:hover {
                 background-color: $primary-red;
                 transition: .33s;
-                p,h2{
+
+                p,
+                h2 {
                     color: $primary-black;
                 }
             }
         }
     }
 
-    #contain-documents{
+    #contain-documents {
         width: 100vw;
         height: 100%;
         display: flex;
-        
-        .CV{
+
+        .CV {
             width: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
             border-right: 1px solid white;
-            h2{
+
+            h2 {
                 font-size: 3.5rem;
                 font-family: 'impact';
                 color: $primary-red;
             }
-            a{
+
+            a {
                 margin-top: 10rem;
                 text-decoration: none;
                 background-color: $primary-red;
@@ -192,25 +216,29 @@ body{
                 font-family: 'impact';
                 font-size: 1.25rem;
                 border: 1px solid $primary-red;
-                &:hover{
+
+                &:hover {
                     background-color: transparent;
                     color: $primary-red;
                     transition: .33s;
                 }
             }
         }
-        .fiche{
+
+        .fiche {
             width: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            h2{
+
+            h2 {
                 font-size: 3.5rem;
                 font-family: 'impact';
                 color: $primary-red;
                 letter-spacing: 2px;
             }
-            a{
+
+            a {
                 margin-top: 10rem;
                 text-decoration: none;
                 background-color: $primary-red;
@@ -221,12 +249,103 @@ body{
                 font-family: 'impact';
                 font-size: 1.25rem;
                 border: 1px solid $primary-red;
-                &:hover{
+
+                &:hover {
                     background-color: transparent;
                     color: $primary-red;
                     transition: .33s;
                 }
             }
         }
+    }
+
+    #contain-veille {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 75% 75%;
+        height: 65vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        grid-row-gap: 55px;
+
+        .card {
+            width: 75%;
+            background-color: #19232e;
+            padding: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+            border-radius: 1rem;
+
+            p {
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                letter-spacing: 1.25px;
+                font-size: 1.25rem;
+                margin-top: 2rem;
+                text-align: justify;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            &:hover {
+                background-color: $primary-red;
+                box-shadow: .1rem .15rem 1.5rem $primary-red;
+
+                p {
+                    color: $primary-black;
+                    transition: .33s;
+                }
+
+                transition: .33s;
+            }
+        }
+    }
+
+    #contain-contact {
+        width: 100%;
+
+        form {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            input[type="mail"]{
+                width: 50%;
+                padding: 1rem;
+                outline: none;
+                
+            }
+            textarea{
+                resize: none;
+                margin-top: 2.5rem;
+                outline: none;
+            }
+            input[type="submit"]{
+                margin-top: 2.5rem;
+                width: 25%;
+                background-color: $primary-red;
+                border-radius: 1.5rem;
+                border: 1px solid transparent;
+                font-family: 'impact';
+                color: $primary-black;
+                font-size: 1.25rem;
+                padding: 1rem;
+                cursor: pointer;
+                margin-left: auto;
+                &:hover{
+                    border: 1px solid $primary-red;
+                    color: $primary-red;
+                    background-color: $primary-black;
+                    box-shadow: .1rem .15rem 1.5rem $primary-red;
+                    transition: .33s;
+                }
+            }
+        }
+
     }
 }

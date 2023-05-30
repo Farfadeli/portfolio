@@ -9,3 +9,6 @@ document.querySelector(".evn").addEventListener("click", () => {
 document.querySelector(".seetalk").addEventListener("click" , () =>{
     window.location.href = window.location.href + "page/project/seetalkProject.html";
 })
+document.querySelector(".ahm").addEventListener("click" , () =>{
+    window.location.href = window.location.href + "page/project/ahmProject.html";
+})
