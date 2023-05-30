@@ -279,6 +279,12 @@ body #contain-contact form input[type=mail] {
   padding: 1rem;
   outline: none;
 }
+body #contain-contact form input[type=text] {
+  margin-top: 1rem;
+  width: 75%;
+  padding: 0.75rem;
+  outline: none;
+}
 body #contain-contact form textarea {
   resize: none;
   margin-top: 2.5rem;

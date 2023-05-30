@@ -320,6 +320,12 @@ body {
                 outline: none;
                 
             }
+            input[type="text"]{
+                margin-top: 1rem;
+                width: 75%;
+                padding: .75rem;
+                outline: none;
+            }
             textarea{
                 resize: none;
                 margin-top: 2.5rem;
